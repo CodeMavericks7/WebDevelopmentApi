@@ -10,7 +10,8 @@
     "moment": "^2.29.4"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "prepare": "npx prisma generate"
   },
   "name": "wed-dev-api",
   "description": "",
