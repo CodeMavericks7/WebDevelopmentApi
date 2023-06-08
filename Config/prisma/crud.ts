@@ -23,7 +23,7 @@ export const db = {
 
         switch (table) {
             case 'class':
-                return response = await prisma.class.update({ where, data });
+                return response = await prisma.class.update({where, data});
             case 'classname':
                 return response = await prisma.className.update({ where, data });
             case 'student':

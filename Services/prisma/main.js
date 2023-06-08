@@ -113,9 +113,7 @@ exports.Update = {
     },
     className(className) {
         crud_1.db.update('classname', {
-            where: {
-                id: className.id
-            }
+            id: className.id
         }, {
             data: {
                 id: className.id,

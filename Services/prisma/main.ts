@@ -131,9 +131,7 @@ export const Update = {
 
   className(className: ClassName) {
     db.update('classname', {
-      where: {
         id: className.id
-      }
     }, {
       data: {
         id: className.id,
