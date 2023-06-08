@@ -131,12 +131,10 @@ export const Update = {
 
   className(className: ClassName) {
     db.update('classname', {
-        id: className.id
+      id: className.id
     }, {
-      data: {
-        id: className.id,
-        name: className.name
-      }
+      id: className.id,
+      name: className.name
     })
   },
 }

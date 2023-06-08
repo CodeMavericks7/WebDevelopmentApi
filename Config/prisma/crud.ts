@@ -25,7 +25,7 @@ export const db = {
             case 'class':
                 return response = await prisma.class.update({where, data});
             case 'classname':
-                return response = await prisma.className.update({ where, data });
+                return response = await prisma.className.update({ where: where, data: data });
             case 'student':
                 return response = await prisma.student.update({ where, data });
             case 'studentclass':

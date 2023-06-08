@@ -115,10 +115,8 @@ exports.Update = {
         crud_1.db.update('classname', {
             id: className.id
         }, {
-            data: {
-                id: className.id,
-                name: className.name
-            }
+            id: className.id,
+            name: className.name
         });
     },
 };

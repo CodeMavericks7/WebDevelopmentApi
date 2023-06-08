@@ -36,7 +36,7 @@ exports.db = {
                 case 'class':
                     return response = yield prisma.class.update({ where, data });
                 case 'classname':
-                    return response = yield prisma.className.update({ where, data });
+                    return response = yield prisma.className.update({ where: where, data: data });
                 case 'student':
                     return response = yield prisma.student.update({ where, data });
                 case 'studentclass':
