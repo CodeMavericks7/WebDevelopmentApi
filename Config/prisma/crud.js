@@ -68,7 +68,7 @@ exports.db = {
                 case 'class':
                     return response = yield prisma.class.deleteMany(where);
                 case 'classname':
-                    return response = yield prisma.className.deleteMany({ where: where });
+                    return response = yield prisma.className.delete({ where: where });
                 case 'student':
                     return response = yield prisma.student.deleteMany(where);
                 case 'studentclass':
