@@ -41,6 +41,7 @@ module.exports = (app) => {
     //Delete Routes
     app.delete("/class-name/:id", function (req, res) {
         return __awaiter(this, void 0, void 0, function* () {
+            console.log(req.params);
             const response = yield index_1.prisma.Deleter.className(req.params.id);
             res.json({ response });
         });

@@ -131,14 +131,10 @@ export const Update = {
 
   className(className: ClassName) {
     db.update('student', {
-      where: {
         id: className.id
-      }
     }, {
-      data: {
         id: className.id,
         name: className.name
-      }
     })
   },
 }
@@ -154,7 +150,7 @@ export const Deleter = {
 
   className(id: string) {
     console.log(id)
-    db.deleter('className', { where: { id } });
+    db.deleter('className',  { id } );
   },
 
   removeFromClass(studentId: string, classId: string) {
