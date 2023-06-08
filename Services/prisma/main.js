@@ -112,11 +112,15 @@ exports.Update = {
         });
     },
     className(className) {
-        crud_1.db.update('student', {
-            id: className.id
+        crud_1.db.update('classname', {
+            where: {
+                id: className.id
+            }
         }, {
-            id: className.id,
-            name: className.name
+            data: {
+                id: className.id,
+                name: className.name
+            }
         });
     },
 };
@@ -129,7 +133,7 @@ exports.Deleter = {
     },
     className(id) {
         console.log(id);
-        crud_1.db.deleter('className', { id });
+        crud_1.db.deleter('className', { where: { id } });
     },
     removeFromClass(studentId, classId) {
         crud_1.db.deleter('studentclass', { where: { studentId, classId } });
