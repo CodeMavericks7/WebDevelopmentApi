@@ -12,8 +12,7 @@
     "prisma": "^4.15.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "prepare": "npx prisma generate"
+    "start": "npx prisma generate && node server.js"
   },
   "name": "wed-dev-api",
   "description": "",
