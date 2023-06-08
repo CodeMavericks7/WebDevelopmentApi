@@ -57,6 +57,7 @@ export const db = {
             case 'class':
                 return response = await prisma.class.deleteMany(where);
             case 'classname':
+                console.log(where)
                 return response = await prisma.className.delete({where: where});
             case 'student':
                 return response = await prisma.student.deleteMany(where);
