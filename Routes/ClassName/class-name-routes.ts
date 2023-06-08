@@ -30,6 +30,7 @@ module.exports = (app: any) => {
 
     //Delete Routes
     app.delete("/class-name/:id", async function (req: any, res: any) {
+        console.log(req.params)
         const response = await prisma.Deleter.className(req.params.id);
         res.json({ response });
     });
