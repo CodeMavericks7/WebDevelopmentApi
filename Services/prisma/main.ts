@@ -130,6 +130,7 @@ export const Update = {
   },
 
   className(className: ClassName) {
+    console.log(className)
     db.update('classname', {
       id: className.id
     }, {

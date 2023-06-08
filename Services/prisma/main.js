@@ -112,6 +112,7 @@ exports.Update = {
         });
     },
     className(className) {
+        console.log(className);
         crud_1.db.update('classname', {
             id: className.id
         }, {
