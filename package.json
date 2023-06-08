@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.1.0",
+    "prisma": "^4.13.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment": "^2.29.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "wed-dev-api",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeMavericks7/WebDevelopmentApi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeMavericks7/WebDevelopmentApi/issues"
+  },
+  "homepage": "https://github.com/CodeMavericks7/WebDevelopmentApi#readme"
+}
