@@ -151,7 +151,7 @@ export const Deleter = {
 
   className(id: string) {
     console.log(id)
-    db.deleter('className', { where: { id } });
+    db.deleter('className', { id });
   },
 
   removeFromClass(studentId: string, classId: string) {

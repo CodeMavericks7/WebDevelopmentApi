@@ -130,7 +130,7 @@ exports.Deleter = {
     },
     className(id) {
         console.log(id);
-        crud_1.db.deleter('className', { where: { id } });
+        crud_1.db.deleter('className', { id });
     },
     removeFromClass(studentId, classId) {
         crud_1.db.deleter('studentclass', { where: { studentId, classId } });
